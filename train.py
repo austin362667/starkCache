@@ -80,7 +80,7 @@ def main(argv):
 		try:
 			for ind in (i for i,e in enumerate(l) if e==sl[0]):
 				if l[ind:ind+sll]==sl:
-				results.append((ind,ind+sll-1))
+					results.append((ind,ind+sll-1))
 		except IndexError:
 			results=[]
 		return results
